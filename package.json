@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-backend",
+  "version": "1.0.0",
+  "description": "Assignment 2 - Node/Express/MongoDB backend (CRUD for contacts, projects, services, users)",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "http-errors": "^2.0.0",
+    "mongoose": "^8.19.1",
+    "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "keywords": [],
+  "author": ""
+}
