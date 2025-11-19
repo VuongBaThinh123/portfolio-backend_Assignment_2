@@ -7,8 +7,9 @@ async function connectDB() {
     console.error('❌ MONGODB_URI is missing in .env');
     process.exit(1);
   }
+
   try {
-    const conn = await mongoose.connect(uri, { });
+    const conn = await mongoose.connect(uri, {});
     console.log(`✅ MongoDB connected: ${conn.connection.host}/${conn.connection.name}`);
   } catch (err) {
     console.error('❌ Mongo connection error:', err.message);
