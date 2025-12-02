@@ -5,6 +5,8 @@ const createError = require('http-errors');
 const cors = require('cors');
 const morgan = require('morgan');
 const connectDB = require('./src/config/db');
+const authRouter = require('./src/routes/auth.routes');
+
 
 const contactsRouter = require('./src/routes/contacts.routes');
 const projectsRouter = require('./src/routes/projects.routes');
@@ -35,6 +37,8 @@ app.use('/api/contacts', contactsRouter);
 app.use('/api/projects', projectsRouter);
 app.use('/api/services', servicesRouter);
 app.use('/api/users', usersRouter);
+app.use('/api/auth', authRouter);
+
 
 // ---------- 404 ----------
 app.use((req, _res, next) => {
